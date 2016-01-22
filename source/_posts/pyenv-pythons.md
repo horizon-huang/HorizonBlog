@@ -8,7 +8,7 @@ tags: [python, pyenv]
 
 ## pyenv安装
 ```bash
-brew install pyenv
+$ brew install pyenv
 ```
 
 > homebrew若没有需先安装，具体安装方法非常简单，不在这说明。
@@ -78,6 +78,6 @@ $ pyenv shell --unset
 当使用pyenv local [version]切换本地python版本时，发现python还是之前的版本，原因是没有配置shell configuration，具体配置如下：
 ```bash
 在~/.bash_profile的最下面加入
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-source .bash_profile  #更新shell配置
+$ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+$ source .bash_profile  #更新shell配置
 ```
