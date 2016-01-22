@@ -78,6 +78,7 @@ $ pyenv shell --unset
 当使用pyenv local [version]切换本地python版本时，发现python还是之前的版本，原因是没有配置shell configuration，具体配置如下：
 ```bash
 在~/.bash_profile的最下面加入
-$ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+然后执行
 $ source .bash_profile  #更新shell配置
 ```
