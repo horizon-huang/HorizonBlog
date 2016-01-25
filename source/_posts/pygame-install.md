@@ -13,6 +13,8 @@ $ brew install smpeg --HEAD（这个不是必需的）
 $ sudo pip install hg+http://bitbucket.org/pygame/pygame
 ```
 
+具体安装可查看[http://juliaelman.com/blog/2013/04/02/installing-pygame-on-osx-mountain-lion/](http://juliaelman.com/blog/2013/04/02/installing-pygame-on-osx-mountain-lion/)
+
 ## 安装中出现的问题
 #### 1、Cannot find command 'hg'
 > 出现这个问题是因为系统不存在hg命令，需安装[Mercurial](https://www.mercurial-scm.org)。
